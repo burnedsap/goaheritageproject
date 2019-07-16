@@ -138,9 +138,10 @@ a {
 	height: 150vh;
 	background-color: rgba(0, 0, 0, 0.7);
 }
+
 .project-container {
 	width: 90%;
-	height: 90%;
+	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -151,6 +152,7 @@ a {
 .project-text-container {
 	width: 60%;
 }
+
 .project-text-container p {
 	font-family: CircularBook;
 	text-decoration: none;
@@ -174,7 +176,6 @@ a {
 	letter-spacing: -1px;
 	margin: 0;
 }
-
 
 .proj-title p {
 	font-family: CircularBook;
@@ -276,8 +277,8 @@ a {
 	background-color: rgba(190, 13, 13, 0.73);
 	width: 100%;
 	height: 100vh;
-/*	display: flex;
-	flex-direction: column;*/
+	/*	display: flex;
+		flex-direction: column;*/
 }
 
 .exhibition-container {
@@ -294,8 +295,9 @@ a {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 450px;
+	grid-auto-rows: 300px;
 }
+
 .exhib-title h2 {
 	font-family: CircularBook;
 	text-decoration: none;
@@ -305,7 +307,6 @@ a {
 	margin: 0;
 }
 
-
 .exhib-title p {
 	font-family: CircularBook;
 	text-decoration: none;
@@ -314,9 +315,8 @@ a {
 	margin: 0;
 }
 
-
 .exhib1 {
-		padding: 15px;
+	padding: 15px;
 	margin: 4px;
 	border-radius: 4px;
 	background-color: salmon;
@@ -324,33 +324,51 @@ a {
 
 .exhib2 {
 	padding: 15px;
-margin: 4px;
-border-radius: 4px;
+	margin: 4px;
+	border-radius: 4px;
 	background-color: salmon;
 }
 
 .exhib3 {
 	padding: 15px;
-margin: 4px;
-border-radius: 4px;
+	margin: 4px;
+	border-radius: 4px;
 	background-color: salmon;
 }
-/*
 .about-section {
-	vertical-align: top;
-	top: 0;
-	margin: 0;
-	background-color: rgba(0, 0, 0, 0.40);
+	background-color: rgba(0, 0, 0, 0.74);
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	padding: 50px 50px 150px 50px;
 }
 
 .about-container {
-	width: 80%;
+	width: 90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
+}
+
+.about-logos {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+	margin: 0;
+	
+}
+
+.about-logos a {
+	margin: 0;
+	padding: 0;
+}
+.about-logos img {
+	width: 120px;
+	height: auto;
+	margin: 0;
 }
 
 .contact-section {
@@ -368,7 +386,7 @@ border-radius: 4px;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
-}*/
+}
 /*___________________________________________________*/
 
 
