@@ -8,26 +8,37 @@ font-family: "CircularBold";
 src: url('fonts/CircularStd-Bold.otf') format("opentype");
 }
 
-html, body {
+body {
 	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: black;
+}
+
+body h2 {
+	font-family: CircularBook;
+	text-decoration: underline;
+	font-size: 45px;
+	color: #FFFFFF;
+	letter-spacing: -2.36px;
 }
 
 .navigation {
-	top: 0;
-	left: 0;
-	position: fixed;
 	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	/*left: 0;*/
+	position: fixed;
 	background-color: rgba(0, 0, 0, 0.0);
 	height: 40px;
-	
+	display: flex;
+	justify-content: center;
 }
 
 .navigation-container {
-	
 	height: 100%;
+	width: 90%;
 	padding: 20px 50px 20px 50px;
 	display: flex;
 	flex-direction: row;
@@ -46,7 +57,6 @@ html, body {
 }
 
 .temp {
-	padding-right: 50px;
 	display: flex;
 	align-items: center;
 }
@@ -64,32 +74,44 @@ a {
 
 .top-section {
 	vertical-align: top;
-	margin: 0;
+	margin: 0 auto 20px auto;
 	top: 0;
 	height: 100vh;
 	width: 100%;
 	display: flex;
-	padding: 150px 50px 150px 50px;
+	padding: 0 0 0 0;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	/*padding: 150px 50px 150px 50px;*/
 	background: url(2.PNG) no-repeat center scroll rgba(0, 0, 0, 0.84);
 	background-size: cover;
 }
-
+/*
 .overlay {
-	position: fixed; /* Sit on top of the page content */
+	position: fixed; /* Sit on top of the page content *!/
 	display: block;
-	width: 100%; /* Full width (cover the whole page) */
-	height: 100%; /* Full height (cover the whole page) */
+	width: 100%; /* Full width (cover the whole page) *!/
+	height: 100%; /* Full height (cover the whole page) *!/
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.3); /* Black background with opacity */
-	z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+	background-color: rgba(0,0,0,0.3); /* Black background with opacity *!/
+	z-index: 1; /* Specify a stack order in case you're using a different order for other elements *!/
 }
+*/
 
 .top-container {
+	width: 90%;
+	margin: auto;
+	height: 70%;
+	display: flex;
+	align-items: center;
+}
+
+.top-text-container {
 	width: 60%;
-	z-index: 3;
 }
 
 .top-container h1 {
@@ -112,55 +134,71 @@ a {
 }
 
 .project-section {
-	vertical-align: top;
-	top: 0;
-	margin: 0;
-	background-color: rgba(0, 0, 0, 0.70);
 	width: 100%;
-	height: 100vh;
-	display: flex;
-	padding: 50px 50px 150px 50px;
+	height: 150vh;
+	background-color: rgba(0, 0, 0, 0.7);
 }
-
 .project-container {
-	width: 80%;
+	width: 90%;
+	height: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
-h2 {
+.project-text-container {
+	width: 60%;
+}
+.project-text-container p {
 	font-family: CircularBook;
-	text-decoration: underline;
-	font-size: 45px;
+	text-decoration: none;
+	font-size: 15px;
 	color: #FFFFFF;
-	letter-spacing: -2.36px;
-	margin: 20px 20px 50px 20px;
 }
 
 .project-grid {
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: 100px;
-	padding: 20px;
+	grid-auto-rows: 120px;
+	padding: 0px;
+}
+
+.proj-title h2 {
+	font-family: CircularBook;
+	text-decoration: none;
+	font-size: 25px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+
+.proj-title p {
+	font-family: CircularBook;
+	text-decoration: none;
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0;
 }
 
 .project1 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
-	outline: 2px;
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	background-color: salmon;
 	grid-column-start: 1;
-	grid-column-end: 4;
+	grid-column-end: 3;
 	grid-row-start: 1;
 	grid-row-end: 3;
 }
 
 .project2 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
 	grid-column-start: 1;
@@ -169,68 +207,87 @@ h2 {
 }
 
 .project3 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
+	grid-row-start: 1;
+	grid-row-end: 3;
 }
 
 .project4 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
+	grid-row-start: 3;
+	grid-row-end: 5;
 }
 
 .project5 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
+	grid-row-start: 3;
+	grid-row-end: 5;
 }
 
 .project6 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
 }
 
 .project7 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
+	grid-row-start: 5;
+	grid-row-end: 7;
 }
 
 .project8 {
-	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
+	outline: 2px;
+	background-color: salmon;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+.project9 {
+	border-radius: 4px;
+	margin: 4px;
+	padding: 15px;
 	outline: 2px;
 	background-color: salmon;
 }
 
 .exhibition-section {
-	vertical-align: top;
-	top: 0;
-	margin: 0;
-	background-color: rgba(0, 0, 0, 0.20);
+	background-color: rgba(190, 13, 13, 0.73);
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	padding: 50px 50px 150px 50px;
+/*	display: flex;
+	flex-direction: column;*/
 }
 
 .exhibition-container {
-	width: 80%;
+	width: 90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
 .exhib-grid {
@@ -240,27 +297,27 @@ h2 {
 	grid-auto-rows: 150px;
 	padding: 20px;
 }
-
+/*
 .exhib1 {
 	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	/*width: 20%;*!/
+	/*height: 150px;*!/
 	outline: 2px;
 	background-color: salmon;
 }
 
 .exhib2 {
 	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	/*width: 20%;*!/
+	/*height: 150px;*!/
 	outline: 2px;
 	background-color: salmon;
 }
 
 .exhib3 {
 	margin: 2px;
-	/*width: 20%;*/
-	/*height: 150px;*/
+	/*width: 20%;*!/
+	/*height: 150px;*!/
 	outline: 2px;
 	background-color: salmon;
 }
@@ -297,87 +354,23 @@ h2 {
 	width: 80%;
 	display: flex;
 	flex-direction: column;
-}
+}*/
+/*___________________________________________________*/
+
+
+
+
+
+
+
+
 
 /*html {
 	background-color: white;
 	scroll-behavior: smooth;
 }
 
-body {
-}
 
-.main-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 50px;
-	background-color: black;
-	display: block;
-	/*display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;*!/
-	padding: 20px;
-}
-
-.main-nav a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.1rem;
-}
-
-.main-nav img {
-	max-height: 5vw;
-	min-height: 30px;
-}
-
-.top-container {
-	background-color: fuchsia;
-	height: 100vh;
-	width: 100%;
-	margin-top: 50px; /* Add a top margin to avoid content overlay *!/
-}
-
-/*.section1 {
-	width: 100vw;
-	padding-top: 80px;
-	height: 100vh;
-	background-image: url("ghp_back.png");
-	background-color: black;
-	background-size: cover;
-	background-repeat: no-repeat;
-	color: white;
-	font-family: hk_grotesklight;
-	font-size: 18px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.section1 .h1 {
-	font-family: ;
-}
-
-.sectionp {
-	width: 100vw;
-	padding-top: 80px;
-	height: 100vh;
-	background-color: salmon;
-	color: white;
-	font-family: hk_grotesklight;
-}
-
-.projectcon {
-	margin-left: auto;
-	margin-right: auto;
-	width: 95.3%;
-	height: 100vh;
-	margin-bottom: 75px;
-	font-family: hk_grotesklight;
-}
 
 .n_proj {
 	display: block;
